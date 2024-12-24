@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navyug Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="chart.css"> -->
+
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="trending-up-outline"></ion-icon></span>
+                        <span class="title">Navyug</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+                        <span class="title">Contribute</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="bar-chart-outline"></ion-icon></span>
+                        <span class="title">Analysis</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="information-outline"></ion-icon></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+                        <span class="title">Sign-Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!-- Search Box -->
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search Here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <!-- User Image -->
+                <div class="user">
+                    <img src="user.png" alt="User Image">
+                </div>
+            </div>
+            <div class="welcome-section">
+                <div class="welcome-image">
+                    <img src="image.jpg" alt="Welcome Image">
+                </div>
+                <div class="welcome-text">
+                    
+                    <p>"Innovation is seeing what everybody has seen and thinking what nobody has thought."</p>
+                </div>
+            </div>
+            
+            <!-- cards -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,504</div>
+                        <div class="cardName">RESEARCH PAPERS</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="newspaper-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">PATENTS</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="shield-checkmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">5M$</div>
+                        <div class="cardName">STARTUP GRANTS</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="logo-usd"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">135</div>
+                        <div class="cardName">AWARDS</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="trophy-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gh">
+                <div class="cont"> 
+                    <div class="chart"> <canvas id="barchart" width="500" height="500"></canvas>
+                    </div>
+                    <div class="chart"> <canvas id="doughnut" width="500" height="500"></canvas>
+                </div>
+            </div>
+
+            <!-- data list -->
+
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Innovation</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Department</td>
+                                <td>Budget</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Smart Air Purifier</td>
+                                <td>Environmental Sciences</td>
+                                <td>$1500</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>AI-Powered Healthcare Assistant</td>
+                                <td>Computer Science</td>
+                                <td>$3500</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Renewable Energy Solutions</td>
+                                <td>Energy Studies</td>
+                                <td>$4000</td>
+                                <td><span class="status inprogress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Blockchain Voting System</td>
+                                <td>Political Science</td>
+                                <td>$2000</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Automated Farming Equipment</td>
+                                <td>Agricultural Engineering</td>
+                                <td>$5000</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>Virtual Reality Education Platform</td>
+                                <td>Education</td>
+                                <td>$2500</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Recent Patents -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Patents</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="image1.jpg"></div></td>
+                            <td><h4>Smart Wearable Device <br><span>HealthTech</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="image2.jpg"></div></td>
+                            <td><h4>Blockchain-based Voting System <br><span>Cybersecurity</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="image3.jpg"></div></td>
+                            <td><h4>Self-Healing Materials <br><span>Material Science</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="image4.jpg"></div></td>
+                            <td><h4>AI-based Diagnostics Tool <br><span>Healthcare</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="image5.jpg"></div></td>
+                            <td><h4>Automated Agriculture System <br><span>Agritech</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="image6.jpg"></div></td>
+                            <td><h4>Advanced Battery Technology <br><span>Energy Storage</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="image7.jpg"></div></td>
+                            <td><h4>Renewable Energy Management <br><span>GreenTech</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="image8.jpg"></div></td>
+                            <td><h4>AI-Powered Learning System <br><span>EdTech</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="image9.jpg"></div></td>
+                            <td><h4>Smart Home Automation <br><span>IoT</span></h4></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function(){
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+
+        }
+
+
+        let list = document.querySelectorAll('.navigation li');
+        function activeLink(){
+            list.forEach((item) =>
+                item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) =>
+            item.addEventListener('mouseover', activeLink));
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <script src = "chart1.js"></script>
+    <script src = "chart2.js"></script>
+
+</body>
+</html>
